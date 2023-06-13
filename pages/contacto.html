@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | HMfotografía</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--etiquetas SEO onpage-->
+    <meta name="description" content="En la sección Contacto, a través de un breve formulario, podrás contactarte conmigo para intercambiar mensajes o información.">
+    <meta name="keywords" content="Fotografía, fotos, pictures, blog, galería, noticias, fotógrafo, paisajes, animales, viajes">
+
+    <!--link hoja de estilos propio-->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="body-back body-bottom">
+    
+    <nav class="navbar bg-dark navbar-expand-md sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/images.png" alt="Logo" width="70">
+            </a>
+
+
+            <div class="collapse navbar-collapse nav-pills" id="navbarNavAltMarkup">
+                <div class="navbar-nav column-gap-5">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="acerca.html">Acerca</a>
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container contact-form mb-5">
+            <div class="contact-image transparent2">
+                <img src="../img/contact-camara.png" alt="Logo fotógrafo contacto" />
+            </div>
+            <!--para este formulario decidí no utilizar las etiquetas label y usar en su lugar el atributo placeholder sólo por motivo de diseño y estético-->
+            <form method="post">
+                <h1 class="mb-4 text-contact">Dejame un Mensaje:</h1>
+                <div class="flex-contact">
+                    <div class="data-form1">
+                        <div class="form-group mb-3">
+                            <input type="text" name="txtName" class="form-control" placeholder="Tu Nombre *" value="" required/>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="email" name="txtEmail" class="form-control" placeholder="Tu Email *" value="" required/>
+                        </div>
+                        <div class="form-group mb-5">
+                            <input type="number" name="txtPhone" class="form-control" placeholder="Tu Número de Tel *" value="" required/>
+                        </div>
+
+                    </div>
+                    <div class="data-form2">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Tu Mensaje *" style="width: 100%; height: 150px;" required></textarea>
+                        </div>
+                        <div class="form-group mt-5 d-flex justify-content-end">
+                            <input type="submit" name="btnSubmit" class="btnContact bg-secondary rounded-3" value="Enviar" required/>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+
+    <footer class="flex_footer bg-dark pos-footer">
+
+        <div class="redes_icons">
+            <a href="https://www.facebook.com/hector.gabriel.94/" target="_blank">
+                <span class="iconify" data-icon="ic:baseline-facebook"></span>
+            </a>
+
+            <a href="https://www.instagram.com/hector7325/" target="_blank">
+                <span class="iconify" data-icon="mdi:instagram"></span>
+            </a>
+
+            <a href="#!">
+                <span class="iconify" data-icon="entypo-social:linkedin-with-circle"></span>
+            </a>
+
+            <a href="https://github.com/Hector039" target="_blank">
+                <span class="iconify" data-icon="mdi:github"></span>
+            </a>
+        </div>
+
+        <div class="text_footer text-white">
+            © 2023 Copyright: HMFotografía
+        </div>
+    </footer>
+
+    <!--link script de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--link script Iconify-->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</body>
+
+</html>

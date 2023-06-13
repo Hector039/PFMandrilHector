@@ -1,0 +1,89 @@
+/*partial para el contenido principal del Index*/
+.body-back {
+    background-image: url("../img/fondobody.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: $monserrat;
+    font-weight: 700;
+    color: antiquewhite;
+}
+
+a {
+    font-family: $monserrat;
+}
+
+p {
+    font-family: $ibmplex;
+}
+
+h3 {
+    font-family: $monserrat;
+}
+
+h5 {
+    font-family: $ibmplex;
+    font-style: italic;
+}
+
+.carousel-text {
+    margin: 0;
+}
+
+
+.index_text {
+    background-color: rgba(161, 161, 161, 0.4);
+    padding: 25px;
+
+    p {
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        font-family: $monserrat;
+    }
+}
+
+.transparent {
+    filter: brightness(1.1);
+    mix-blend-mode: color-dodge;
+}
+
+.transparent2 {
+    filter: brightness(1.1);
+}
+
+
+
+
+/*animación de entrada para el carousel*/
+.flip-horizontal-bottom {
+    -webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+    animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+@-webkit-keyframes flip-horizontal-bottom {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+
+    100% {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+    }
+}
+
+@keyframes flip-horizontal-bottom {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+
+    100% {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+    }
+}

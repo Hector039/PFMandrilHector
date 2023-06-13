@@ -1,0 +1,25 @@
+/*partial para el contenido De variables*/
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600;700&family=IBM+Plex+Serif:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@300;400;700&display=swap');
+
+/*variable para fonts*/
+$monserrat: 'Montserrat', sans-serif;
+$ibmplex: 'IBM Plex Serif', serif;
+
+
+/*variables de medidas*/
+$espaciado: 50px;
+
+/*mixin para ubicar elementos*/
+@mixin flex-column-centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*mixin con medidas*/
+@mixin medidas($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+

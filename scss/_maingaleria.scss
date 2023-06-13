@@ -1,0 +1,16 @@
+/*partial para el contenido principal de Galería*/
+
+.text-galeria {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.pic {
+    transition: all 1000ms;
+
+    &:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+}

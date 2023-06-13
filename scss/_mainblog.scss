@@ -1,0 +1,21 @@
+/*partial para el contenido principal del Blog*/
+
+.btn {
+    transition: all 0.5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.card {
+    background-color: lightgrey;
+}
+
+.card-text {
+    font-family: $ibmplex;
+}
+
+.info-blog {
+    color: white;
+}
